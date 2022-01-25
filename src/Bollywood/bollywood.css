@@ -1,0 +1,50 @@
+.bollywoodtag{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    color: #000000;
+    font-weight: 400;
+    margin-left: 2.7vw;
+}
+.bollywoodhr{
+    margin-bottom: 2vh;
+    width: 6.5vw;
+    height: 3px;
+    background-color: #F08080;
+    position: relative;
+    left: -22.8vw;
+    top: -12px;
+    box-shadow: none;
+    border: none;
+    
+}
+.tophr{
+    margin-bottom: 2vh;
+    width: 6.5vw;
+    height: 3px;
+    background-color: #F08080;
+    position: relative;
+    left: -9.7vw;
+    top: -12px;
+    box-shadow: none;
+    border: none;
+}
+
+.inside{
+    height: 3px; 
+    background-color: #F0F0F0;
+    box-shadow: none;
+    margin:20px 0px;
+    border: none;
+    width: 55vw;
+    margin-left: 1vw;
+   
+}
+.bollywoodadv{
+    margin-top: 3vh;
+    height: 170vh;
+    border: 3px solid #F0F0F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
