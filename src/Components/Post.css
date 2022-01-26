@@ -1,29 +1,47 @@
+.postSiren{
+  box-shadow: 0px 3px 6px #00000029;
+  width: 100%;
+  height: 12vh;
+  position: fixed;
+  top:0px;
+  left: 0px;
+  z-index: 9999;
+  background-color: #FF2E63;
+ 
+
+
+}
 .smalltitle {
   display: flex;
-  box-shadow: 0px 3px 6px #00000029;
-  height: 15vh;
-  position: relative;
-  left: -10vw;
-  width: 110vw;
+  height: 12vh;
+  /* position: relative;
+  left: -2vw; */
+  width: 15vw;
+  margin: auto;
+  color: #252A34;
+
+}
+.smalltitle:hover{
+  color: #f2f2f2;
 }
 .smallsiren {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 45px;
   position: relative;
-  top: -5px;
+  top: -15px;
 }
 .smallthe {
   transform: rotate(-90deg);
   font-family: "Montserrat", sans-serif;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 500;
-  margin-right: 10px;
-  margin-left: 10vw;
+  /* margin-right: 10px;
+  margin-left: 10vw; */
   position: relative;
-  right: -20px;
+  right: -4px;
 }
-.button {
+/* .button {
   width: 120px;
   height: 40px;
   font-size: 16px;
@@ -35,9 +53,10 @@
   margin-top: 6vh;
   position: relative;
   top: -10px;
-}
+} */
 .reacthead {
   display: flex;
+  margin-top: 15vh;
 }
 .fixed {
   height: 100vh;

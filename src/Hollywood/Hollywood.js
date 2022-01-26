@@ -2,7 +2,8 @@ import Header from "../Header/Header"
 
 function Hollywood(){
     return(
-        <><Header />
+        <>
+        <Header />
         <h1>Hollywood</h1>
         </>
     )

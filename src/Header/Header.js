@@ -14,12 +14,12 @@ function Header(){
       
         <div style={{"width":"85vw"}}>
         <div className="navstyle">
-       <NavLink className="navitem" to="/" >Home</NavLink>
-       <NavLink className="navitem" to="/bollywood" >Bollywood</NavLink>
-       <NavLink className="navitem" to="/technology">Technology</NavLink>
-       <NavLink className="navitem" to="/hollywood">Hollywood</NavLink>
-       <NavLink className="navitem" to="/fitness">Fitness</NavLink>
-       <NavLink className="navitem" to="/food">Food</NavLink>
+       <NavLink className={({ isActive }) => isActive ? "activenavitem" : "navitem"} to="/" >Home</NavLink>
+       <NavLink className={({ isActive }) => isActive ? "activenavitem" : "navitem"} to="/bollywood" >Bollywood</NavLink>
+       <NavLink className={({ isActive }) => isActive ? "activenavitem" : "navitem"} to="/technology">Technology</NavLink>
+       <NavLink className={({ isActive }) => isActive ? "activenavitem" : "navitem"} to="/hollywood">Hollywood</NavLink>
+       <NavLink className={({ isActive }) => isActive ? "activenavitem" : "navitem"} to="/fitness">Fitness</NavLink>
+       <NavLink className={({ isActive }) => isActive ? "activenavitem" : "navitem"} to="/food">Food</NavLink>
        </div>
        <Hz/>
        </div>

@@ -11,10 +11,15 @@ export default function Post() {
 
   return (
     <>
-      <div className="smalltitle">
+    <div className="postSiren">
+    <Link style={{"textDecoration":"none","color":"#000000"}} to="/">
+    <div className="smalltitle">
         <h3 className="smallthe">The</h3>
         <h1 className="smallsiren">Siren</h1>
         {/* <button className="button">Get Stated</button> */}
+      </div>
+       </Link>
+     
       </div>
       <div className="reacthead">
         <div className="fixed">

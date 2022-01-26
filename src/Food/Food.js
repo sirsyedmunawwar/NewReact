@@ -2,7 +2,8 @@ import Header from "../Header/Header"
 
 function Food(){
     return(
-        <><Header />
+        <>
+        <Header />
        <h1>Food</h1>
        </>
     )

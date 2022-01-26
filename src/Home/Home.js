@@ -6,17 +6,17 @@ import css from "../Home/home.css";
 import Hz from "../Components/Hz";
 
 const Home = () => {
-  const [loadBtntext, setLoadBtntext] = useState("Load More");
+  const [loadBtntext, setLoadBtntext] = useState("LOAD MORE");
   const [itemsToShow, setItemsToShow] = useState(8);
 
   const handleLoadMore = () => {
     setItemsToShow(itemsToShow + 2);
     if (itemsToShow > 9) {
-      setLoadBtntext("load less");
+      setLoadBtntext("LOAD LESS");
     }
     if (itemsToShow > 11) {
       setItemsToShow(itemsToShow - 2);
-      setLoadBtntext("load More");
+      setLoadBtntext("LOAD MORE");
     }
   };
 
@@ -157,18 +157,21 @@ const Home = () => {
               )
             )}
           </div>
+          {/* <div className="advdivonButton">
+            <div className="adv">Advertistement</div>
+          </div> */}
         </div>
       </div>
       <div>
         <h1 className="latest">Latest Stories</h1>
         <hr className="latesthr" />
       </div>
-      <Hz />
+      <hr className="lastHr"/>
       <div className="bottomarticle">
         {rows.map((item) =>
           item.id > 8 && item.id < 12 ? (
             <>
-              <Link className="link" to={`/post/${item.id}`}>
+              <Link className="link HrHz" to={`/post/${item.id}`}>
                 <div className="Bottomcontentdiv">
                   <h1 className="bottomheading">{item.title}</h1>
                   <p className="bottomdesc">{item.description}</p>
@@ -182,7 +185,7 @@ const Home = () => {
           )
         )}
       </div>
-      <Hz />
+     
       {/* <div className="arrowdiv">
         <div className="arrow">VIEW MORE</div>
         <div className="rightarrow"></div>

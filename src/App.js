@@ -5,7 +5,7 @@ import Hollywood from './Hollywood/Hollywood';
 import Technology from './Technology/Technology';
 import Food from './Food/Food';
 import Fitness from './Fitness/Fitness';
-
+import PageNotFound from './Components/PageNotFound';
 import ScrollToTop from './Components/ScrollToTop';
 import { BlogData } from './Components/ContextAPI';
 import Post from './Components/Post';
@@ -27,7 +27,7 @@ function App() {
             <Route path="/food" element={<Food />}></Route>
             <Route path="/post" element={<Post />}></Route>
             <Route path='/post/:id' element={<Post />}/>
-            {/* <Route path='/*' element={<PageNotFound/>}/> */}
+            <Route path='/*' element={<PageNotFound/>}/>
           </Routes>
         </BrowserRouter>
         
