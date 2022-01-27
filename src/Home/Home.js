@@ -31,7 +31,7 @@ const Home = () => {
           item.id === "1000" ? (
             <Link className="verticalGallery link" to={`/post/${item.id}`}>
               <div className="verticalGallery">
-                <img src={item.image} />
+                {/* <img src={item.image} alt={item.alt}/> */}
                 <h1 className="titleofvg">Title of Vertical Gallery</h1>
                 <p className="dateofvg"> Travel / August 21 2017</p>
               </div>
@@ -44,7 +44,7 @@ const Home = () => {
           item.id === "1001" ? (
             <Link className="righttop link" to={`/post/${item.id}`}>
               <div className="righttop">
-                <img src={item.image} />
+                {/* <img src={item.image} alt={item.alt}/> */}
                 <h1 className="titlert">The Sound cloud You loved is doomed</h1>
                 <p className="datert"> Travel / August 21 2017</p>
               </div>
@@ -57,7 +57,7 @@ const Home = () => {
           item.id === "1001" ? (
             <Link className="rightbottom link" to={`/post/${item.id}`}>
               <div className="rightbottom">
-                <img src={item.image} />
+                {/* <img src={item.image} alt={item.alt}/> */}
                 <h1 className="titlert">The Sound cloud You loved is doomed</h1>
                 <p className="datert"> Travel / August 21 2017</p>
               </div>
@@ -76,7 +76,7 @@ const Home = () => {
           item.id < 4 ? (
             <Link className="link" to={`/post/${item.id}`}>
               <div className="leftsidediv">
-                <img className="leftsideimage" src={item.image} />
+                <img className="leftsideimage" src={item.image} alt={item.alt} />
                 <h1 className="leftSidehead">{item.title}</h1>
                 <p className="leftSidedetails">{item.description}</p>
                 <span className="leftSidetype">{item.category}</span>
@@ -101,7 +101,7 @@ const Home = () => {
                 <Hz />
                 <Link className="link" to={`/post/${item.id}`}>
                   <div className="leftdiv">
-                    <img className="imagediv" src={item.image} />
+                    <img className="imagediv" src={item.image} alt={item.alt} />
                     <div className="contentdiv">
                       <h1 className="bottomheading">{item.title}</h1>
                       <p className="bottomdesc">{item.description}</p>
@@ -120,11 +120,19 @@ const Home = () => {
             <div className="downarrow"></div>
             <div className="arrow">{loadBtntext}</div>
           </button>
-
-          <div className="verticalGallerybottom">
+          {rows.map((item) =>
+          item.id == 19 ? (
+            <Link className=" link" to={`/post/${item.id}`}>
+               <div className="verticalGallerybottom">
             <h1 className="vgbtitle">Title of Vertical Gallery</h1>
             <p className="vgbdate"> Travel / August 21 2017</p>
           </div>
+            </Link>
+          ) : (
+            ""
+          )
+        )}
+         
         </div>
         <div className="right">
           <div className="advdiv">
@@ -136,12 +144,12 @@ const Home = () => {
           </div>
           <div className="rightdiv">
             {rows.map((item) =>
-              item.id > 8 && item.id < 13 ? (
+              item.id > 11 && item.id < 16 ? (
                 <> 
                   {" "}
                   <Link className="rightdivlink link" to={`/post/${item.id}`}>
                     <div className="rightdivmain">
-                      <img className="rightdivimage" src={item.image} />
+                      <img className="rightdivimage" src={item.image} alt={item.alt} />
                       <div className="Rightcontentdiv">
                         <h1 className="rightheading">{item.title}</h1>
 
@@ -157,9 +165,7 @@ const Home = () => {
               )
             )}
           </div>
-          {/* <div className="advdivonButton">
-            <div className="adv">Advertistement</div>
-          </div> */}
+         
         </div>
       </div>
       <div>
@@ -169,7 +175,7 @@ const Home = () => {
       <hr className="lastHr"/>
       <div className="bottomarticle">
         {rows.map((item) =>
-          item.id > 8 && item.id < 12 ? (
+          item.id > 15 && item.id < 19 ? (
             <>
               <Link className="link HrHz" to={`/post/${item.id}`}>
                 <div className="Bottomcontentdiv">
@@ -186,10 +192,7 @@ const Home = () => {
         )}
       </div>
      
-      {/* <div className="arrowdiv">
-        <div className="arrow">VIEW MORE</div>
-        <div className="rightarrow"></div>
-      </div> */}
+      
 
       <div />
     </>

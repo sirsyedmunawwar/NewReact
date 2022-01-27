@@ -51,7 +51,7 @@ export default function Post() {
                   <i className="fa fa-instagram icons"> </i>
                   <i className="fa fa-youtube-square icons"> </i>
                 </div>
-                <img className="reactimage" src={item.image} />
+                <img className="reactimage" src={item.image}  alt={item.alt}/>
                 <p className="reactpara">{item.description}</p>
                 <div>{item.category}</div>
                 <div>{item.date}</div>
@@ -80,12 +80,15 @@ export default function Post() {
         <Hz />
         <div className="leftSide">
           {rows.map((item) => (
-            (item.id)>100 && (item.id)<104?(<>
+            (item.id)>100 && (item.id)<104?(
+           <Link className="link" to={`/post/${item.id}`}>
+           <>
               <div className="leftsidediv">
-                <img className="leftsideimage" src={item.image} />
+                <img className="leftsideimage" src={item.image} alt={item.alt}/>
                 <h1 className="leftSidehead">{item.title}</h1> <Author />
               </div>
-            </>):('')
+            </></Link>
+            ):('')
             
           ))}
         </div>

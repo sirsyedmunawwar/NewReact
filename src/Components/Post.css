@@ -27,19 +27,20 @@
 .smallsiren {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
-  font-size: 45px;
+  font-size: 3.2vw;
   position: relative;
-  top: -15px;
+  width: 8vw;
+  height: 6vh;
+  top: -3vh;
 }
 .smallthe {
   transform: rotate(-90deg);
   font-family: "Montserrat", sans-serif;
-  font-size: 20px;
+  font-size: 1.5vw;
   font-weight: 500;
-  /* margin-right: 10px;
-  margin-left: 10vw; */
+  width: 5vh;
+  height: 2vw;
   position: relative;
-  right: -4px;
 }
 /* .button {
   width: 120px;
@@ -80,8 +81,9 @@
 .fiveways {
   display: inline-block;
   font-weight: normal;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 36px;
+  font-family: 'Montserrat', sans-serif;
+
+  font-size: 26px;
   letter-spacing: 0px;
   color: #000000;
 }
@@ -95,7 +97,8 @@
 .reactpara {
   font-size: 16px;
   color: #000000;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: 'Open Sans', sans-serif;
+
   width: 47vw;
 }
 .reactcode {
@@ -131,13 +134,13 @@
 .clapimage {
   width: 40px;
   height: 40px;
-  /* background: transparent url(./Assets/rythm.svg) 0% 0% no-repeat padding-box; */
+  background: transparent url(../Assets/rythm.svg) 0% 0% no-repeat padding-box;
   margin-right: 10px;
 }
 .shareimage {
   width: 40px;
   height: 40px;
-  /* background: transparent url(./Assets/share.svg) 0% 0% no-repeat padding-box; */
+  background: transparent url(../Assets/share.svg) 0% 0% no-repeat padding-box;
   margin-right: 10px;
 }
 .clapcount {
@@ -154,7 +157,7 @@
 .image {
   width: 110px;
   height: 110px;
-  /* background-image: url(./Assets/author.png); */
+  background-image: url(../Assets/author.png);
   background-repeat: no-repeat;
   background-position: center;
 }
