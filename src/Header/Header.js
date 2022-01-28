@@ -18,7 +18,7 @@ function Header(){
        <NavLink className={({ isActive }) => isActive ? "activenavitem" : "navitem"} to="/bollywood" >Bollywood</NavLink>
        <NavLink className={({ isActive }) => isActive ? "activenavitem" : "navitem"} to="/technology">Technology</NavLink>
        <NavLink className={({ isActive }) => isActive ? "activenavitem" : "navitem"} to="/hollywood">Hollywood</NavLink>
-       <NavLink className={({ isActive }) => isActive ? "activenavitem" : "navitem"} to="/fitness">Fitness</NavLink>
+       <NavLink className={({ isActive }) => isActive ? "activenavitem" : "navitem"} to="/sports">Sports</NavLink>
        <NavLink className={({ isActive }) => isActive ? "activenavitem" : "navitem"} to="/food">Food</NavLink>
        </div>
        <Hz/>

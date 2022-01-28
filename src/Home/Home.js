@@ -31,7 +31,7 @@ const Home = () => {
           item.id === "1000" ? (
             <Link className="verticalGallery link" to={`/post/${item.id}`}>
               <div className="verticalGallery">
-                {/* <img src={item.image} alt={item.alt}/> */}
+               
                 <h1 className="titleofvg">Title of Vertical Gallery</h1>
                 <p className="dateofvg"> Travel / August 21 2017</p>
               </div>
@@ -44,7 +44,6 @@ const Home = () => {
           item.id === "1001" ? (
             <Link className="righttop link" to={`/post/${item.id}`}>
               <div className="righttop">
-                {/* <img src={item.image} alt={item.alt}/> */}
                 <h1 className="titlert">The Sound cloud You loved is doomed</h1>
                 <p className="datert"> Travel / August 21 2017</p>
               </div>
@@ -57,7 +56,6 @@ const Home = () => {
           item.id === "1001" ? (
             <Link className="rightbottom link" to={`/post/${item.id}`}>
               <div className="rightbottom">
-                {/* <img src={item.image} alt={item.alt}/> */}
                 <h1 className="titlert">The Sound cloud You loved is doomed</h1>
                 <p className="datert"> Travel / August 21 2017</p>
               </div>
@@ -117,11 +115,10 @@ const Home = () => {
           )}
 
           <button onClick={handleLoadMore} className="arrowdiv">
-            <div className="downarrow"></div>
             <div className="arrow">{loadBtntext}</div>
           </button>
           {rows.map((item) =>
-          item.id == 19 ? (
+          item.id === "19" ? (
             <Link className=" link" to={`/post/${item.id}`}>
                <div className="verticalGallerybottom">
             <h1 className="vgbtitle">Title of Vertical Gallery</h1>

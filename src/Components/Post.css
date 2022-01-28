@@ -27,7 +27,7 @@
 .smallsiren {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
-  font-size: 3.2vw;
+  font-size: 3.4vw;
   position: relative;
   width: 8vw;
   height: 6vh;
@@ -41,6 +41,7 @@
   width: 5vh;
   height: 2vw;
   position: relative;
+  bottom: -1vh;
 }
 /* .button {
   width: 120px;
@@ -71,21 +72,15 @@
   margin-left: 20vw;
   width: 55vw;
 }
-.five {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  padding-left: 6px;
-  padding-right: 8px;
 
-  font-size: 36px;
-}
 .fiveways {
   display: inline-block;
   font-weight: normal;
   font-family: 'Montserrat', sans-serif;
-
   font-size: 26px;
   letter-spacing: 0px;
   color: #000000;
+  width: 48vw;
 }
 .reactimage {
   background-repeat: no-repeat;
@@ -98,8 +93,10 @@
   font-size: 16px;
   color: #000000;
   font-family: 'Open Sans', sans-serif;
-
+  opacity: 0.9;
   width: 47vw;
+  line-height: 1.5;
+
 }
 .reactcode {
   width: 48vw;

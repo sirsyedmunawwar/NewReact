@@ -9,7 +9,7 @@
     margin-bottom: 2vh;
     width: 6.5vw;
     height: 3px;
-    background-color: #F08080;
+    background-color: #FF2E63;
     position: relative;
     left: -22.8vw;
     top: -12px;
@@ -39,9 +39,12 @@
     margin-left: 1vw;
    
 }
+.inside:first-of-type{
+    display: none;
+}
 .bollywoodadv{
     margin-top: 3vh;
-    height: 170vh;
+    height: 165vh;
     border: 3px solid #F0F0F0;
     display: flex;
     justify-content: center;

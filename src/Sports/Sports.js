@@ -1,19 +1,18 @@
-import cssstyles from "./bollywood.css";
 import Header from "../Header/Header";
 import { Link } from "react-router-dom";
 import { ContextAPI } from "../Components/ContextAPI";
 import { useContext, useState } from "react";
 
-function Bollywood(props) {
+function Sports(props) {
   const [loadBtntext, setLoadBtntext] = useState("Load More");
-  const [itemsToShow, setItemsToShow] = useState(108);
+  const [itemsToShow, setItemsToShow] = useState(408);
 
   const handleLoadMore = () => {
     setItemsToShow(itemsToShow + 2);
-    if (itemsToShow > 109) {
+    if (itemsToShow > 409) {
       setLoadBtntext("load less");
     }
-    if (itemsToShow > 111) {
+    if (itemsToShow > 411) {
       setItemsToShow(itemsToShow - 2);
       setLoadBtntext("load More");
     }
@@ -26,17 +25,17 @@ function Bollywood(props) {
       <div className="top">
         <div className="left">
           <div>
-            <h1 className="bollywoodtag">Bollywood</h1>
+            <h1 className="bollywoodtag">Sports</h1>
             <hr className="bollywoodhr" />
           </div>
 
           {rows.map((item) =>
-            item.id >= 101 && item.id < itemsToShow && item.id <= 111 ? (
+            item.id >= 401 && item.id < itemsToShow && item.id <= 411 ? (
               <>
                 <hr className="inside" />
                 <Link className="link" to={`/post/${item.id}`}>
                   <div className="leftdiv">
-                    <img className="imagediv" src={item.image} alt={item.alt}/>
+                    <img className="imagediv" src={item.image} alt={item.alt} />
                     <div className="contentdiv">
                       <h1 className="bottomheading">{item.title}</h1>
                       <p className="bottomdesc">{item.description}</p>
@@ -62,7 +61,7 @@ function Bollywood(props) {
           </div>
           <div className="rightdiv">
             {rows.map((item) =>
-              item.id > 111 && item.id < 116 ? (
+              item.id > 411 && item.id < 416 ? (
                 <>
                   {" "}
                   <Link className="rightdivlink link" to={`/post/${item.id}`}>
@@ -90,4 +89,4 @@ function Bollywood(props) {
     </>
   );
 }
-export default Bollywood;
+export default Sports;
