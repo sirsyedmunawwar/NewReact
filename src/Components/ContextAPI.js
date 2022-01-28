@@ -5,20 +5,20 @@ export const BlogData = (props) => {
   const [rows] = useState([
     { 
         id: "1000", 
-        image: "https://images.unsplash.com/photo-1445855743215-296f71d4b49c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fHRyZWUlMjBjb2xvcmZ1bHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60", 
+        image: "https://images.unsplash.com/photo-1619437784770-786fbd0ea745?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80", 
         alt:"Picture",
-        title: "Joshua Tree Overnight Adventure", 
-        description: "Gujarat is vastly underrated and it’s a mystery to us why the region isn’t more well-known as a tourist destination. It has a plethora of temples and palaces", 
-        category: "Travel", 
-        date: "/ August 21 2017"
+        title: "RED LEAVES", 
+        description: "Why are some leaves red and what does it mean?We assume leaves to be green, but also notice how there are exceptions – we expect a show of reds, golds and yellows each autumn.But what about all those red leaves we see turning up at other times of the year, even in the middle of summer?The red colour is caused by pigments called anthocyanins. The pigments cause not only the red of some leaves, grapes and onions, but also the blue of blueberries and the black of soy beans.Some trees are naturally very high in these pigments and will have strong colours at all times of the year. These trees are usually marked out by both their appearance and their name, eg. the copper beech:", 
+        category: "NATURE", 
+        date: "/JAN 10 2020"
     },
     { 
         id: "1001", 
         image: "https://images.unsplash.com/photo-1495164606704-19412de896f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Njh8fHRyZWUlMjBjb2xvcmZ1bHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60", 
         title: "Joshua Tree Overnight Adventure", 
         description: "Gujarat is vastly underrated and it’s a mystery to us why the region isn’t more well-known as a tourist destination. It has a plethora of temples and palaces", 
-        category: "Travel", 
-        date: "/ August 21 2017"
+        category: "NATURE", 
+        date: "/JAN 10 2020"
     },
     // The latest
     { 
@@ -26,8 +26,8 @@ export const BlogData = (props) => {
         image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80", 
         title: "Joshua Tree Overnight Adventure", 
         description: "Gujarat is vastly underrated and it’s a mystery to us why the region isn’t more well-known as a tourist destination. It has a plethora of temples and palaces Gujarat is vastly underrated and it’s a mystery to us why the region isn’t more well-known as a tourist destination. It has a plethora of temples and palaces", 
-        category: "Travel", 
-        date: "/ August 21 2017"
+        category: "NATURE", 
+        date: "/JAN 10 2020"
     },
     { 
       id: "2", 
@@ -168,11 +168,11 @@ export const BlogData = (props) => {
         },
         { 
           id: "19", 
-          image: "https://images.everydayhealth.com/images/diet-nutrition/healthy-recipes/chocolate-pumpkin-football-brownies-722x406.jpg?w=1110  ", 
-          title: "Chocolate Pumpkin Football Brownies", 
-          description: "Preheat the oven to 350  Make the icing: Mix together nondairy yogurt with powdered sugar in a small bowl. Transfer to a pastry bag with a thin tip or a zipper-top sandwich bag. Place in refrigerator Lightly coat a 9-inch square baking dish with coconut oil spray and set aside Whisk together flour, cocoa powder, baking powder, pumpkin pie spice, and salt in a medium bowl. Set aside Combine almond milk, pumpkin purée, vanilla extract, oil, and egg in large bowl using an electric mixer. Add brown sugar and beat until smooth. Add dry ingredients to wet ingredients and beat well to combine In a small bowl, combine the baking soda and apple cider vinegar. When the mixture fizzes, use a spatula to stir into the brownie batter. Gently fold in the chocolate chips. Scrape batter into the prepared baking dish, and smooth the  ", 
-          category: "FOOD", 
-        date: "/ JAN 10 2022"
+          image: 'https://images.unsplash.com/photo-1640868618785-5f5db98d0f76?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80', 
+          title: "Importance of Trees", 
+          description: "Trees are important to us in a lot of ways and we cannot ignore their importance. They are important because they give us fresh air to breathe, food to eat and shelter/shade from sunlight and rainfall. Besides this, there are many medicines in the market that are made up of trees extracts. Apart from this, there are plants and trees that have medicinal value. They bring peacefulness; create a pleasing and relaxing environment. Also, they help in reflecting the harmful rays of the sun and maintaining a balanced temperature. Besides, they also help in water conservation and preventing soil erosion. They also manage the ecosystem and from ancient times several varieties of plants are worshipped.", 
+          category: "NATURE", 
+        date: "/ JAN 10 2020"
         },
        
     { 

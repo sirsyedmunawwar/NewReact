@@ -32,8 +32,8 @@ const Home = () => {
             <Link className="verticalGallery link" to={`/post/${item.id}`}>
               <div className="verticalGallery">
                
-                <h1 className="titleofvg">Title of Vertical Gallery</h1>
-                <p className="dateofvg"> Travel / August 21 2017</p>
+                <h1 className="titleofvg">RED LEAVES</h1>
+                <p className="dateofvg"> NATURE / JAN 10 2020</p>
               </div>
             </Link>
           ) : (
@@ -121,8 +121,8 @@ const Home = () => {
           item.id === "19" ? (
             <Link className=" link" to={`/post/${item.id}`}>
                <div className="verticalGallerybottom">
-            <h1 className="vgbtitle">Title of Vertical Gallery</h1>
-            <p className="vgbdate"> Travel / August 21 2017</p>
+            <h1 className="vgbtitle">Importance Of Trees</h1>
+            <p className="vgbdate"> NATURE / JAN 10 2020</p>
           </div>
             </Link>
           ) : (

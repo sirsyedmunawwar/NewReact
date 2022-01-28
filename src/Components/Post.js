@@ -77,7 +77,7 @@ export default function Post() {
       </div>
       <div className="reactbottom">
         <h3 className="reactmore">More From The Siren</h3>
-        <Hz />
+        <hr className="HrForPost" />
         <div className="leftSide">
           {rows.map((item) => (
             (item.id)>403 && (item.id)<407?(

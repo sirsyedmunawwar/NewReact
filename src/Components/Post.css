@@ -7,19 +7,13 @@
   left: 0px;
   z-index: 9999;
   background-color: #FF2E63;
- 
-
-
 }
 .smalltitle {
   display: flex;
   height: 12vh;
-  /* position: relative;
-  left: -2vw; */
   width: 15vw;
   margin: auto;
   color: #252A34;
-
 }
 .smalltitle:hover{
   color: #f2f2f2;
@@ -43,19 +37,7 @@
   position: relative;
   bottom: -1vh;
 }
-/* .button {
-  width: 120px;
-  height: 40px;
-  font-size: 16px;
-  font-family: "Open Sans", sans-serif;
-  color: #03a87c;
-  background-color: #ffffff;
-  border: 1px solid #03a87c;
-  margin-left: 65vw;
-  margin-top: 6vh;
-  position: relative;
-  top: -10px;
-} */
+
 .reacthead {
   display: flex;
   margin-top: 15vh;
@@ -77,17 +59,17 @@
   display: inline-block;
   font-weight: normal;
   font-family: 'Montserrat', sans-serif;
-  font-size: 26px;
+  font-size: 32px;
   letter-spacing: 0px;
-  color: #000000;
+  color: #252A34;
   width: 48vw;
+
 }
 .reactimage {
   background-repeat: no-repeat;
   width: 48vw;
   background-position: center;
   height: 60vh;
-  /* background-image: url(./Assets/react.png); */
 }
 .reactpara {
   font-size: 16px;
@@ -96,15 +78,8 @@
   opacity: 0.9;
   width: 47vw;
   line-height: 1.5;
+}
 
-}
-.reactcode {
-  width: 48vw;
-  height: 50vw;
-  /* background-image: url(./Assets/code.png); */
-  background-repeat: no-repeat;
-  background-position: center;
-}
 .buttonsdiv {
   margin-top: 35px;
   display: flex;
@@ -119,7 +94,6 @@
   padding: 0px 8px;
   box-shadow: none;
   border: none;
-
   height: 33px;
   background-color: #f2f2f2;
   opacity: 1;
@@ -189,9 +163,8 @@
 .reactmore {
   font: normal normal normal 22px/25px Open Sans;
   letter-spacing: 0px;
-  color: #000000;
-  opacity: 0.8;
-  padding-top: 8vh;
+  color: #FF2E63;
+  padding-top: 4vh;
   padding-bottom: 2vh;
 }
 .icons {
@@ -205,4 +178,13 @@
   letter-spacing: 0px;
   color: #a2a2a2;
   opacity: 1;
+}
+.HrForPost{
+  height: 3px; 
+  background-color: #252A34;
+  box-shadow: none;
+  margin:20px 0px;
+  border: none;
+  width: 86.6%;
+ 
 }

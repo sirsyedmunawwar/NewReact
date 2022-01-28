@@ -1,7 +1,7 @@
 .bollywoodtag{
     font-family: 'Montserrat', sans-serif;
     font-size: 35px;
-    color: #000000;
+    color: #252A34;
     font-weight: 400;
     margin-left: 2.7vw;
 }
@@ -15,7 +15,6 @@
     top: -12px;
     box-shadow: none;
     border: none;
-    
 }
 .tophr{
     margin-bottom: 2vh;
@@ -31,13 +30,12 @@
 
 .inside{
     height: 3px; 
-    background-color: #F0F0F0;
+    background-color: #252A34;
     box-shadow: none;
     margin:20px 0px;
     border: none;
     width: 55vw;
     margin-left: 1vw;
-   
 }
 .inside:first-of-type{
     display: none;
@@ -45,7 +43,8 @@
 .bollywoodadv{
     margin-top: 3vh;
     height: 165vh;
-    border: 3px solid #F0F0F0;
+    border: 3px solid #252A34;
+    opacity: 0.5;
     display: flex;
     justify-content: center;
     align-items: center;
