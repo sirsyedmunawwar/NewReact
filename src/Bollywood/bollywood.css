@@ -50,3 +50,36 @@
     align-items: center;
     
 }
+@media(max-width:600px) {
+    
+    .bollywoodtag{
+        margin-top: 30px;
+        font-size: 25px;
+        color: #252A34;
+        margin-left: 0px;
+    }
+    .bollywoodhr{
+        width: 90px;
+        position: relative;
+        left: -128px;
+        top: -0px;
+        margin-bottom: 30px;
+    }
+   
+    .TopPost{
+        margin: 50px 0px 0px;
+        font-size: 25px;
+    }
+    .inside{
+        margin:20px 0px;
+        width: 85vw;
+    }
+    .inside:first-of-type{
+        display: none;
+    }
+    .bollywoodadv{
+      display: none;
+        
+    }
+   
+}

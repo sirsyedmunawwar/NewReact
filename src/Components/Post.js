@@ -11,15 +11,14 @@ export default function Post() {
 
   return (
     <>
-    <div className="postSiren">
-    <Link style={{"textDecoration":"none","color":"#000000"}} to="/">
-    <div className="smalltitle">
-        <h3 className="smallthe">The</h3>
-        <h1 className="smallsiren">Siren</h1>
-        {/* <button className="button">Get Stated</button> */}
-      </div>
-       </Link>
-     
+      <div className="postSiren">
+        <Link style={{ textDecoration: "none", color: "#000000" }} to="/">
+          <div className="smalltitle">
+            <h3 className="smallthe">The</h3>
+            <h1 className="smallsiren">Siren</h1>
+            {/* <button className="button">Get Stated</button> */}
+          </div>
+        </Link>
       </div>
       <div className="reacthead">
         <div className="fixed">
@@ -51,10 +50,10 @@ export default function Post() {
                   <i className="fa fa-instagram icons"> </i>
                   <i className="fa fa-youtube-square icons"> </i>
                 </div>
-                <img className="reactimage" src={item.image}  alt={item.alt}/>
+                <img className="reactimage" src={item.image} alt={item.alt} />
                 <p className="reactpara">{item.description}</p>
                 <span className="bottomspan1">{item.category}</span>
-                      <span className="bottomspan2">{item.date}</span>
+                <span className="bottomspan2">{item.date}</span>
               </>
             ) : (
               ""
@@ -78,19 +77,36 @@ export default function Post() {
       <div className="reactbottom">
         <h3 className="reactmore">More From The Siren</h3>
         <hr className="HrForPost" />
-        <div className="leftSide">
-          {rows.map((item) => (
-            (item.id)>403 && (item.id)<407?(
-           <Link className="link" to={`/post/${item.id}`}>
-           <>
-              <div className="leftsidediv">
-                <img className="leftsideimage" src={item.image} alt={item.alt}/>
-                <h1 className="leftSidehead">{item.title}</h1> <Author />
-              </div>
-            </></Link>
-            ):('')
-            
-          ))}
+        <div className="PostSide">
+          {rows.map((item) =>
+            item.id > 403 && item.id < 407 ? (
+              <Link className="link" to={`/post/${item.id}`}>
+                <>
+                  <div className="PostSidediv">
+                    <img
+                      className="PostSideimage"
+                      src={item.image}
+                      alt={item.alt}
+                    />
+                    <h1 className="PostSidehead">{item.title}</h1>
+                    <div className="authordiv1">
+                      <div className="image"></div>
+                      <div className="details">
+                        <h3 className="authorname">Dmitry Nozhenko</h3>
+                        <p className="datedetails">
+                          Jan 28, 2019 · 10 min read
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 className="extraauthorname">Dmitry Nozhenko</h3>
+
+                </>
+              </Link>
+            ) : (
+              ""
+            )
+          )}
         </div>
       </div>
     </>

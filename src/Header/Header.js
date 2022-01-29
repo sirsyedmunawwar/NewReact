@@ -4,7 +4,7 @@ import "./Header.css"
 import { useState } from "react"
 
 function Header(){
-    const [active,setActive]=useState(false)
+    const [active,setActive]=useState(true)
     const hambutton=()=>{
         setActive(!active)
     };
@@ -36,10 +36,6 @@ function Header(){
        </div>
        <hr className="headerHr"/>
        </div>
-       
-       
-      
-      
        </>
     )
 }

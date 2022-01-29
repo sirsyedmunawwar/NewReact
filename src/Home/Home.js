@@ -102,7 +102,7 @@ const Home = () => {
                     <img className="imagediv" src={item.image} alt={item.alt} />
                     <div className="contentdiv">
                       <h1 className="bottomheading">{item.title}</h1>
-                      <p className="bottomdesc">{item.description}</p>
+                      <p className="bottomdescdiv">{item.description}</p>
                       <span className="bottomspan1">{item.category}</span>
                       <span className="bottomspan2">{item.date}</span>
                     </div>
@@ -136,10 +136,10 @@ const Home = () => {
             <div className="adv">Advertistement</div>
           </div>
           <div>
-            <h1 className="latest">Top Posts</h1>
+            <h1 className="TopPost">Top Posts</h1>
             <hr className="topposthr" />
           </div>
-          <div className="rightdiv">
+          <div className="rightdivHome">
             {rows.map((item) =>
               item.id > 11 && item.id < 16 ? (
                 <> 

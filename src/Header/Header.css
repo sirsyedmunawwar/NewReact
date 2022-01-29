@@ -94,13 +94,15 @@ max-width: 100%;
 @media(max-width:600px){
 body{
     margin: inherit;
+    overflow-x: hidden;
+
 }
 .hamburger{
     display:inherit;
     width: 8vw;
     height: 8vw;
     position: relative ;
-    right: -40px;
+    right: -10px;
     margin-top: 12px;
 }
 .siren{

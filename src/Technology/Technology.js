@@ -38,7 +38,7 @@ function Technology(props) {
                     <img className="imagediv" src={item.image} alt={item.alt} />
                     <div className="contentdiv">
                       <h1 className="bottomheading">{item.title}</h1>
-                      <p className="bottomdesc">{item.description}</p>
+                      <p className="bottomdescdiv">{item.description}</p>
                       <span className="bottomspan1">{item.category}</span>
                       <span className="bottomspan2">{item.date}</span>
                     </div>
@@ -56,7 +56,7 @@ function Technology(props) {
         </div>
         <div className="right">
           <div>
-            <h1 className="latest">Top Posts</h1>
+            <h1 className="TopPost">Top Posts</h1>
             <hr className="topposthr" />
           </div>
           <div className="rightdiv">
