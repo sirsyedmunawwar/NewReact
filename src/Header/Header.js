@@ -1,18 +1,31 @@
 import { NavLink,Link} from "react-router-dom"
 import "./Header.css"
  import Hz from '../Components/Hz'
+import { useState } from "react"
 
 function Header(){
+    const [active,setActive]=useState(false)
+    const hambutton=()=>{
+        setActive(!active)
+    };
     return(
         <>
         <Link style={{"textDecoration":"none","color":"#000000"}} to="/">
         <div className="title">
-       <h3 className="the">The</h3>
-        <h1 className="siren">Siren</h1>
+            <div className="titlecontainer">
+            <span className="the">The</span>
+            <span className="siren">Siren</span>
+            </div>
+            <div className="hamburger">
+                <div className="fafahamburger">
+               <button className="hambutton" onClick={hambutton}><i class="fa fa-bars "  style={{"fontSize":"30px"}}></i> </button>
+                </div>
+            </div>
+       
        </div>
        </Link>
       
-        <div style={{"width":"85vw"}}>
+        <div className={active?"hamnavstyle":"navContainer"} >
         <div className="navstyle">
        <NavLink className={({ isActive }) => isActive ? "activenavitem" : "navitem"} to="/" >Home</NavLink>
        <NavLink className={({ isActive }) => isActive ? "activenavitem" : "navitem"} to="/bollywood" >Bollywood</NavLink>
@@ -21,8 +34,9 @@ function Header(){
        <NavLink className={({ isActive }) => isActive ? "activenavitem" : "navitem"} to="/sports">Sports</NavLink>
        <NavLink className={({ isActive }) => isActive ? "activenavitem" : "navitem"} to="/food">Food</NavLink>
        </div>
-       <Hz/>
+       <hr className="headerHr"/>
        </div>
+       
        
       
       
