@@ -10,11 +10,13 @@ function Header(){
     };
     return(
         <>
-        <Link style={{"textDecoration":"none","color":"#000000"}} to="/">
+      
         <div className="title">
             <div className="titlecontainer">
+            <Link style={{"textDecoration":"none","color":"#000000"}} to="/">
             <span className="the">The</span>
             <span className="siren">Siren</span>
+            </Link>
             </div>
             <div className="hamburger">
                 <div className="fafahamburger">
@@ -23,7 +25,7 @@ function Header(){
             </div>
        
        </div>
-       </Link>
+      
       
         <div className={active?"hamnavstyle":"navContainer"} >
         <div className="navstyle">

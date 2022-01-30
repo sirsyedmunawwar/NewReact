@@ -95,6 +95,7 @@ max-width: 100%;
 body{
     margin: inherit;
     overflow-x: hidden;
+    width: 600px;
 
 }
 .hamburger{
@@ -141,6 +142,10 @@ body{
     height: 24vh;
     width: 100vw;
     overflow: scroll;
+    position: absolute;
+    background-color: white;
+    z-index: 1;
+
 }
 .navstyle{
     font-weight:500;
@@ -149,6 +154,7 @@ body{
     flex-direction: column;
     justify-content:space-evenly;
     width: 80vw;  
+    
 }
 .hamnavstyle{
    display: none;
@@ -161,14 +167,14 @@ body{
     height: 6vh;
     padding-top: 16px;
     box-sizing: border-box;
-    border-bottom:1px double rgba(255, 46, 98, 0.5);
+    border-top:1px double rgba(255, 46, 98, 0.5);
 }
 .activenavitem{
     height: 6vh;
     width: 100vw;
     padding-top: 16px;
     box-sizing: border-box;
-    border-bottom:1px double rgba(255, 46, 98, 0.5);
+    border-top:1px double rgba(255, 46, 98, 0.5);
 
 }
 .headerHr{

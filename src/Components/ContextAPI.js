@@ -5,7 +5,7 @@ export const BlogData = (props) => {
   const [rows] = useState([
     { 
         id: "1000", 
-        image: "https://images.unsplash.com/photo-1619437784770-786fbd0ea745?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80", 
+        image: "https://images.unsplash.com/photo-1619525839474-e54f0cd01af7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80", 
         alt:"Picture",
         title: "RED LEAVES", 
         description: "Why are some leaves red and what does it mean?We assume leaves to be green, but also notice how there are exceptions – we expect a show of reds, golds and yellows each autumn.But what about all those red leaves we see turning up at other times of the year, even in the middle of summer?The red colour is caused by pigments called anthocyanins. The pigments cause not only the red of some leaves, grapes and onions, but also the blue of blueberries and the black of soy beans.Some trees are naturally very high in these pigments and will have strong colours at all times of the year. These trees are usually marked out by both their appearance and their name, eg. the copper beech:", 

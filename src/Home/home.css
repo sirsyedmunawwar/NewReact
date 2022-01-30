@@ -16,7 +16,7 @@
 .verticalGallery{
     height: 82.5vh;
     width: 59.1vw;
-    background-image: url(../Assets/centertree.jpg);
+    background-image: url(https://images.unsplash.com/photo-1619525839474-e54f0cd01af7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80);
     background-position: contain;
     background-repeat: no-repeat;
     grid-column-start: 1;
@@ -26,6 +26,8 @@
     border-radius:7px;
    border: 1px solid #F0F0F0;
    background-size: 60vw;
+   background-color: #FF2E63;
+
 }
 .titleofvg{
     font-family: 'Montserrat', sans-serif;
@@ -78,6 +80,8 @@
     height: 40vh;
     border-radius:7px;
     background-size: 29vw;
+   background-color: #FF2E63;
+
 }
 .titlert{
     font-family: 'Montserrat', sans-serif;
@@ -108,6 +112,8 @@
     border-radius:7px;
     border: 1px solid #F0F0F0;
     background-size: 29vw;
+   background-color: #FF2E63;
+
 }
 .latest , .TopPost{
     font-family: 'Montserrat', sans-serif;
@@ -391,21 +397,17 @@ display: none;
     width: 85vw;
 }
 @media(max-width:600px){
-    /* .homeimages{
+    .homeimages{
         width: 100vw;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-row-gap:2.5vh;
-        grid-column-gap:1vw;
-        margin-top:60px;
-        margin-bottom: 100px;
-        margin-right: none;
+       
+        margin-top:0px;
+        margin-bottom: 0px;
     }
     .verticalGallery{
         height: 40vh;
-        width: 100%;
-        background-image: url(../Assets/centertree.jpg);
+        width: 99.5vw;
+        background-image: url(https://images.unsplash.com/photo-1619525839474-e54f0cd01af7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80);
         background-position: contain;
         background-repeat: no-repeat;
         grid-column-start: 1;
@@ -415,14 +417,11 @@ display: none;
         border-radius:7px;
        border: 1px solid #F0F0F0;
        background-size: 60vw;
+       background-color: #FF2E63;
     }
     .titleofvg{
-        font-family: 'Montserrat', sans-serif;
-        font-size:40px;
-        color:#ffffff;
-        font-weight:500;
         position:relative;
-        bottom:-290px;
+        bottom:-220px;
         right:-80px;
     }
     .dateofvg{
@@ -431,9 +430,9 @@ display: none;
         color: #FCFCFC;
         opacity: 0.9;
         position:relative;
-        bottom:-300px;
+        bottom:-220px;
         right:-85px;
-    } */
+    }
     .latest{
         margin: 50px 30px 0px;
         font-size: 25px;
@@ -613,12 +612,13 @@ display: none;
         }
         .rightdiv{
             height: 150vh;
-            background-color: aqua;
         }
         .rightdivHome{
             height: 110vh;
         }
-   
+   .righttop,.rightbottom, .verticalGallerybottom{
+       display: none;
+   }
        
 
 
