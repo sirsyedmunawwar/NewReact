@@ -408,7 +408,6 @@ display: none;
         height: 40vh;
         width: 99.5vw;
         background-image: url(https://images.unsplash.com/photo-1619525839474-e54f0cd01af7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80);
-        background-position: contain;
         background-repeat: no-repeat;
         grid-column-start: 1;
         grid-column-end: 3;
@@ -416,7 +415,7 @@ display: none;
         grid-row-end: 3;
         border-radius:7px;
        border: 1px solid #F0F0F0;
-       background-size: 60vw;
+       background-size: cover;
        background-color: #FF2E63;
     }
     .titleofvg{
