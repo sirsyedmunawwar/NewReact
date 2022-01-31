@@ -131,13 +131,13 @@ body{
     
 }
 .titlecontainer{
-    margin-top: 0.5vh;
+    margin-top: 0.8vh;
     display: flex;
     justify-content: center;
     height: 4vh;
     width: 36%;
     position: relative;
-    left: -10vw;
+    left: -20vw;
 }
 .navContainer{
     height: 24vh;
