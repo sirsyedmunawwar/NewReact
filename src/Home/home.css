@@ -104,13 +104,12 @@
 .rightbottom{
     background-position: cover;
     background-image: url(../Assets/cover.jpg);
-    background-position: cover;
     background-repeat: no-repeat;
     width: 24vw;
     height: 40vh;
     border-radius:7px;
     border: 1px solid #F0F0F0;
-    background-size: 29vw;
+    background-size: cover;
    background-color: #FF2E63;
 
 }
