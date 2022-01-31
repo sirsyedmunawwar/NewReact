@@ -17,7 +17,6 @@
     height: 82.5vh;
     width: 59.1vw;
     background-image: url(https://images.unsplash.com/photo-1619525839474-e54f0cd01af7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80);
-    background-position: contain;
     background-repeat: no-repeat;
     grid-column-start: 1;
     grid-column-end: 3;
@@ -25,7 +24,7 @@
     grid-row-end: 3;
     border-radius:7px;
    border: 1px solid #F0F0F0;
-   background-size: 60vw;
+   background-size: cover;
    background-color: #FF2E63;
 
 }
@@ -51,13 +50,14 @@
     height: 75vh;
     width: 55vw;
     background-image: url(https://images.unsplash.com/photo-1640868618785-5f5db98d0f76?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80);
-    background-position: cover;
+    background-size: cover;
+
     background-repeat: no-repeat;
     border-radius:3px;
     font-family: 'Montserrat', sans-serif;
     color: #FFFFFF;
    text-align: center;
-    background-color: aqua;
+    background-color: #FF2E63;
     margin-top: 10vh;
 }
 .vgbtitle{
@@ -72,20 +72,19 @@
 }
 .righttop{
     background-image: url(../Assets/cover.jpg);
-    background-position: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: cover;
     border: 1px solid #F0F0F0;
     width: 24vw;
     height: 40vh;
     border-radius:7px;
-    background-size: 29vw;
-   background-color: #FF2E63;
+    background-color: #FF2E63;
 
 }
 .titlert{
     font-family: 'Montserrat', sans-serif;
-    font-size:25px;
+    font-size:23px;
     color:#ffffff;
     font-weight:500;
     position:relative;
@@ -180,7 +179,7 @@ overflow: hidden;
     font-family: 'Open Sans', sans-serif;
     width: 80%;
     margin-left: 1.2vw; 
-    height: 17vh;
+    height: 19vh;
     line-height: 1.3;
     overflow: hidden;
 }
@@ -256,10 +255,11 @@ overflow: hidden;
 .bottomdesc, .bottomdescdiv{
     color: #908D8D;
     width: 24vw;
-    height: 18vh;
+    height: 19vh;
     overflow: hidden;
     text-overflow: ellipsis; 
     line-height: 1.3;
+
 }
 .bottomspan1{
     color: #404040;
@@ -307,22 +307,22 @@ overflow: hidden;
     justify-content: center;
     align-items: center;
     opacity: 0.5;
-    margin-left: 2vw;
+    
     
 }
 
 .adv{
-    font-size: 30px;
+    font-size: 28px;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0px;
     color: #000000;
     width: 18vw;
     height: 40px;
-    padding-left: 2vw;
+    text-align: left;
 }
 .rightheading{
     color: #252A34;
-    height: 9vh;
+    height: 8.6vh;
     overflow: hidden;
     
 }

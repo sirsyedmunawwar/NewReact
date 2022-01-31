@@ -29,7 +29,7 @@ max-width: 100%;
     font-size:4vh;
     font-weight:500;
     position:absolute;
-    bottom:3.5vh;
+    bottom:2.5vh;
     width: 3.5vw;
     left: 22vw;
    height: 5vh;
@@ -93,7 +93,7 @@ max-width: 100%;
 
 @media(max-width:600px){
 body{
-    margin: inherit;
+    margin: auto;
     overflow-x: hidden;
     width: 600px;
 
@@ -103,27 +103,28 @@ body{
     width: 8vw;
     height: 8vw;
     position: relative ;
-    right: -10px;
+    right: 60px;
     margin-top: 12px;
 }
 .siren{
     font-size:4vh;
     height: 4vh;
-
+    position: relative;
+    left: -25px;
 }
 .the{
     font-size:1.7vh;
     position:absolute;
     bottom:0.4vh;
     width: 8vw;
-    left: 0.8vw;
+    left: -0vw;
    height: 3vh;
 }
 .title{
     display: flex;
     justify-content: space-evenly;
     height: 6vh;
-    width: 110vw;
+    width: 130vw;
     color: #FF2E63;
   box-shadow: 0px 3px 6px #00000029;
 
