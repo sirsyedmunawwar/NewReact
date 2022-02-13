@@ -1,9 +1,9 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { ContextAPI } from "../Components/ContextAPI";
 import Header from "../Header/Header";
 import css from "../Home/home.css";
 import Hz from "../Components/Hz";
+import { Content } from "../API";
 
 const Home = () => {
   const [loadBtntext, setLoadBtntext] = useState("LOAD MORE");
@@ -19,19 +19,25 @@ const Home = () => {
       setLoadBtntext("LOAD MORE");
     }
   };
+  const [posts, getPosts] = useState([]);
 
-  const [rows] = useContext(ContextAPI);
-
+  useEffect(() => {
+    const fetchData = async () => {
+      let data = await Content(); // params in url
+      console.log(data);
+      getPosts(data);
+    };
+    fetchData();
+  }, []);
   return (
     <>
       <Header />
 
       <div className="homeimages">
-        {rows.map((item) =>
+        {posts.map((item) =>
           item.id === "1000" ? (
-            <Link className="verticalGallery link" to={`/post/${item.id}`}>
+            <Link className="verticalGallery link" to={`/${item._id}`}>
               <div className="verticalGallery">
-               
                 <h1 className="titleofvg">RED LEAVES</h1>
                 <p className="dateofvg"> NATURE / JAN 10 2020</p>
               </div>
@@ -40,9 +46,9 @@ const Home = () => {
             ""
           )
         )}
-        {rows.map((item) =>
+        {posts.map((item) =>
           item.id === "1001" ? (
-            <Link className="righttop link" to={`/post/${item.id}`}>
+            <Link className="righttop link" to={`/${item._id}`}>
               <div className="righttop">
                 <h1 className="titlert">The Sound cloud You loved is doomed</h1>
                 <p className="datert"> Travel / August 21 2017</p>
@@ -52,9 +58,9 @@ const Home = () => {
             ""
           )
         )}
-        {rows.map((item) =>
+        {posts.map((item) =>
           item.id === "1001" ? (
-            <Link className="rightbottom link" to={`/post/${item.id}`}>
+            <Link className="rightbottom link" to={`/${item._id}`}>
               <div className="rightbottom">
                 <h1 className="titlert">The Sound cloud You loved is doomed</h1>
                 <p className="datert"> Travel / August 21 2017</p>
@@ -70,11 +76,15 @@ const Home = () => {
         <hr className="latesthr" />
       </div>
       <div className="leftSide">
-        {rows.map((item) =>
+        {posts.map((item) =>
           item.id < 4 ? (
-            <Link className="link" to={`/post/${item.id}`}>
+            <Link className="link" to={`/${item._id}`}>
               <div className="leftsidediv">
-                <img className="leftsideimage" src={item.image} alt={item.alt} />
+                <img
+                  className="leftsideimage"
+                  src={item.image}
+                  alt={item.alt}
+                />
                 <h1 className="leftSidehead">{item.title}</h1>
                 <p className="leftSidedetails">{item.description}</p>
                 <span className="leftSidetype">{item.category}</span>
@@ -93,11 +103,11 @@ const Home = () => {
       </div>
       <div className="top">
         <div className="left">
-          {rows.map((item) =>
+          {posts.map((item) =>
             item.id > 3 && item.id < itemsToShow && item.id <= 11 ? (
               <>
                 <Hz />
-                <Link className="link" to={`/post/${item.id}`}>
+                <Link className="link" to={`/${item._id}`}>
                   <div className="leftdiv">
                     <img className="imagediv" src={item.image} alt={item.alt} />
                     <div className="contentdiv">
@@ -117,19 +127,18 @@ const Home = () => {
           <button onClick={handleLoadMore} className="arrowdiv">
             <div className="arrow">{loadBtntext}</div>
           </button>
-          {rows.map((item) =>
-          item.id === "19" ? (
-            <Link className=" link" to={`/post/${item.id}`}>
-               <div className="verticalGallerybottom">
-            <h1 className="vgbtitle">Importance Of Trees</h1>
-            <p className="vgbdate"> NATURE / JAN 10 2020</p>
-          </div>
-            </Link>
-          ) : (
-            ""
-          )
-        )}
-         
+          {posts.map((item) =>
+            item.id === "19" ? (
+              <Link className=" link" to={`/${item._id}`}>
+                <div className="verticalGallerybottom">
+                  <h1 className="vgbtitle">Importance Of Trees</h1>
+                  <p className="vgbdate"> NATURE / JAN 10 2020</p>
+                </div>
+              </Link>
+            ) : (
+              ""
+            )
+          )}
         </div>
         <div className="right">
           <div className="advdiv">
@@ -140,13 +149,17 @@ const Home = () => {
             <hr className="topposthr" />
           </div>
           <div className="rightdivHome">
-            {rows.map((item) =>
+            {posts.map((item) =>
               item.id > 11 && item.id < 16 ? (
-                <> 
+                <>
                   {" "}
-                  <Link className="rightdivlink link" to={`/post/${item.id}`}>
+                  <Link className="rightdivlink link" to={`/${item._id}`}>
                     <div className="rightdivmain">
-                      <img className="rightdivimage" src={item.image} alt={item.alt} />
+                      <img
+                        className="rightdivimage"
+                        src={item.image}
+                        alt={item.alt}
+                      />
                       <div className="Rightcontentdiv">
                         <h1 className="rightheading">{item.title}</h1>
 
@@ -162,19 +175,18 @@ const Home = () => {
               )
             )}
           </div>
-         
         </div>
       </div>
       <div>
         <h1 className="latest">Latest Stories</h1>
         <hr className="latesthr" />
       </div>
-      <hr className="lastHr"/>
+      <hr className="lastHr" />
       <div className="bottomarticle">
-        {rows.map((item) =>
+        {posts.map((item) =>
           item.id > 15 && item.id < 19 ? (
             <>
-              <Link className="link HrHz" to={`/post/${item.id}`}>
+              <Link className="link HrHz" to={`/${item._id}`}>
                 <div className="Bottomcontentdiv">
                   <h1 className="bottomheading">{item.title}</h1>
                   <p className="bottomdesc">{item.description}</p>
@@ -188,8 +200,6 @@ const Home = () => {
           )
         )}
       </div>
-     
-      
 
       <div />
     </>

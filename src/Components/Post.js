@@ -1,14 +1,21 @@
 import css from "./Post.css";
 import Hz from "./Hz";
-import { ContextAPI } from "./ContextAPI";
-import { useContext } from "react";
+import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import Author from "../Components/Author";
+import { Content } from "../API";
 
 export default function Post() {
-  const [rows] = useContext(ContextAPI);
   const { id } = useParams();
-
+  const [posts, getPosts] = useState([]);
+  useEffect(() => {
+    const fetchData = async () => {
+      let data = await Content(); // params in url
+      console.log(data);
+      getPosts(data);
+    };
+    fetchData();
+  }, []);
   return (
     <>
       <div className="postSiren">
@@ -32,8 +39,8 @@ export default function Post() {
           </div>
         </div>
         <div className="notfixed">
-          {rows.map((item) =>
-            item.id === id ? (
+          {posts.map((item) =>
+            item._id === id ? (
               <>
                 <h1 className="fiveways">{item.title}</h1>
                 <div className="authordiv">
@@ -78,31 +85,26 @@ export default function Post() {
         <h3 className="reactmore">More From The Siren</h3>
         <hr className="HrForPost" />
         <div className="PostSide">
-          {rows.map((item) =>
+          {posts.map((item) =>
             item.id > 403 && item.id < 407 ? (
-              <Link className="link" to={`/post/${item.id}`}>
-                <>
-                  <div className="PostSidediv">
-                    <img
-                      className="PostSideimage"
-                      src={item.image}
-                      alt={item.alt}
-                    />
-                    <h1 className="PostSidehead">{item.title}</h1>
-                    <div className="authordiv1">
-                      <div className="image"></div>
-                      <div className="details">
-                        <h3 className="authorname">Dmitry Nozhenko</h3>
-                        <p className="datedetails">
-                          Jan 28, 2019 · 10 min read
-                        </p>
-                      </div>
+              <>
+                <div className="PostSidediv">
+                  <img
+                    className="PostSideimage"
+                    src={item.image}
+                    alt={item.alt}
+                  />
+                  <h1 className="PostSidehead">{item.title}</h1>
+                  <div className="authordiv1">
+                    <div className="image"></div>
+                    <div className="details">
+                      <h3 className="authorname">Dmitry Nozhenko</h3>
+                      <p className="datedetails">Jan 28, 2019 · 10 min read</p>
                     </div>
                   </div>
-                  <h3 className="extraauthorname">Dmitry Nozhenko</h3>
-
-                </>
-              </Link>
+                </div>
+                <h3 className="extraauthorname">Dmitry Nozhenko</h3>
+              </>
             ) : (
               ""
             )
